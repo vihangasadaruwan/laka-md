@@ -5,20 +5,14 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-//👉Put Your Session Id👈 කියන එක කපලා අයින් කරලා ඔයාගේ Session id එක දාන්න.
 
-SESSION_ID: process.env.SESSION_ID || "Put Your Session Id",
-
-
-//=================================================
-//මෙවා defult එවා කැමතිනම් false and true විතරක් වෙනස් කරගන්න..✨
-//නැත්තම් bot deploy කරහම .settings comade එක use කරලත් වෙනස් කරගන්න පුලුවන්..🎊
-
+SESSION_ID: process.env.SESSION_ID || "LAKA-MD=J0I0SR6J#fZ9F_UYgoi1daGi_h9ZN2i6qWCEtsUY9zE5C1Cdc728",
 PREFIX: process.env.PREFIX || '.' ,
 MODE: process.env.MODE === undefined ?"public" : process.env.MODE,
 AUTO_VOICE: process.env.AUTO_VOICE === undefined ? "false" : process.env.AUTO_VOICE,
 AUTO_REPLY: process.env.AUTO_REPLY === undefined ? "false" : process.env.AUTO_REPLY,
 AUTO_STICKER: process.env.AUTO_STICKER === undefined ? "false" : process.env.AUTO_STICKER,
+WELCOME_GOODBAY: process.env.WELCOME_GOODBAY === undefined ? "true" : process.env.WELCOME_GOODBAY,
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS === undefined ? "true" : process.env.AUTO_READ_STATUS,
 AUTO_REACT_STATUS: process.env.AUTO_REACT_STATUS === undefined ? "true" : process.env.AUTO_REACT_STATUS,
 ANTI_BAD: process.env.ANTI_BAD === undefined ? "false" : process.env.ANTI_BAD,
@@ -36,5 +30,6 @@ ANTI_CALL: process.env.ANTI_CALL === undefined ? "false" : process.env.ANTI_CALL
 ALWAYS_TYPING: process.env.ALWAYS_TYPING === undefined ? "false" : process.env.ALWAYS_TYPING,
 ANTI_DELETE : process.env.ANTI_DELETE === undefined ? 'true' : process.env.ANTI_DELETE,
 OMDB_API_KEY: process.env.OMDB_API_KEY || "76cb7f39",
+POSTGRESQL_URL: process.env.POSTGRESQL_URL === undefined ? 'postgresql://postgres:lakamd@db.ndduyrkebubwlbwiljee.supabase.co:5432/postgres' : process.env.POSTGRESQL_URL,
 DELETEMSGSENDTO : process.env.DELETEMSGSENDTO === undefined ? '' : process.env.DELETEMSGSENDTO
 };
