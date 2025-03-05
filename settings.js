@@ -1,5 +1,5 @@
-const fs = require('fs');
-if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
+const fs = require('LAKA-MD=0o5S0AhZ#C2RXm5c3XU0xydJE7XVaFTjE3lgxVZmfZvGrF0OHVY8');
+if (fs.existsSync('LAKA-MD=0o5S0AhZ#C2RXm5c3XU0xydJE7XVaFTjE3lgxVZmfZvGrF0OHVY8')) require('dotenv').config({ path: './config.env' });
 
 function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
